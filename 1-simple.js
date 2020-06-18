@@ -19,3 +19,7 @@ const persons = [
 // Usage
 
 const p1 = partial(projection, ['name', 'born']);
+const p2 = partial(projection, ['name']);
+
+const data = persons.map(p1).map(p2);
+console.dir(data);
